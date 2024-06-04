@@ -1,0 +1,6 @@
+DELIMITER //
+CREATE PROCEDURE sp_DeleteUser(IN pUserName VARCHAR(20))
+BEGIN
+    DELETE FROM users WHERE username = pUserName;
+END //
+DELIMITER ;
